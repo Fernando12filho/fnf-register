@@ -1,192 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    font-family: Poppins;
-    box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	font-family: Poppins;
+	box-sizing: border-box;
 }
 
-.bg-image{
-    height: 100vh;
-    width: 100%;
-    display: block;
-    position: fixed;
-    z-index: -1;
-    
+.bg-image {
+	height: 100vh;
+	width: 100%;
+	display: block;
+	position: fixed;
+	z-index: -1;
 }
 
-.image{
-    height: 50vh;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(0, 3, 15, 1.0) 10%, rgba(0, 3, 15, 0.30) 100%), url("/public/images/registerBG.jpg"), lightgray 50% / cover no-repeat;
-    background-size: cover;
-    background-position: center;
+.image {
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(
+			0deg,
+			rgba(0, 3, 15, 1) 10%,
+			rgba(0, 3, 15, 0.3) 100%
+		),
+		url("/public/images/registerBG.jpg"), lightgray 50% / cover no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .fade {
-    height: 50vh;
-    width: 100%;
-    background-color: rgb(0, 3, 15);
+	height: 50vh;
+	width: 100%;
+	background-color: rgb(0, 3, 15);
 }
 
-
 .container-1 {
-    height: fit-content;
-    width: 50%;
-    padding: 5em 5em 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
+	height: fit-content;
+	width: 50%;
+	padding: 5em 5em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .container-1 h1,
 h2,
 p {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .container-1 h1 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 2.125rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 2.125rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
 }
 
 .container-1 h2 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .container-1 p {
-    color: rgba(255, 255, 255, 0.5);
-    font-family: Poppins;
-    font-size: 0.8125rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    width: 45%;
-    margin-top: 1.5em;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: Poppins;
+	font-size: 0.8125rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	width: 45%;
+	margin-top: 1.5em;
 }
 
 .logo {
-    display: flex;
+	display: flex;
 }
 
 .logo p {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 0.61938rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    justify-self: flex-end;
-    align-self: flex-end;
-    margin: 0;
-    width: 70px;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 0.61938rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	justify-self: flex-end;
+	align-self: flex-end;
+	margin: 0;
+	width: 70px;
 }
 
 .logo img {
-    width: 3.7em;
-    height: 3.2em;
+	width: 3.7em;
+	height: 3.2em;
 }
 
 .container-2 {
-    height: fit-content;
-    width: 50%;
-    padding: 5em;
-    padding-bottom: 9em;
+	height: fit-content;
+	width: 50%;
+	padding: 5em;
+	padding-bottom: 9em;
 }
 
-form {
-    display: flex;
-    background-color: #FFF;
-    flex-direction: column;
-    padding: 2em;
-    border-radius: 1.25rem;
-    background: #FFF;
-    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
-    width: 33.6875rem;
-    height: 46.3125rem;
-    flex-shrink: 0;
-    box-sizing: border-box;
-
+.form-container {
+	display: flex;
+	background-color: #fff;
+	flex-direction: column;
+	padding: 2em;
+	border-radius: 1.25rem;
+	background: #fff;
+	box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+	width: 33.6875rem;
+	height: 46.3125rem;
+	flex-shrink: 0;
+	box-sizing: border-box;
 }
 
-form input {
-    border-radius: 0.625rem;
-    border: 1px solid #FFC300;
-    background: #FFF;
-    height: 3.6em;
-    margin-top: 0.5em;
+.form-container input {
+	border-radius: 0.625rem;
+	border: 1px solid #ffc300;
+	background: #fff;
+	height: 3.6em;
+	margin-top: 0.5em;
 }
 
-form label {
-    margin-top: 2.19em;
+.form-container label {
+	margin-top: 2.19em;
 }
 
 .name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .firstName {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+	display: flex;
+	flex-direction: column;
+	width: 45%;
 }
 
 .lastName {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+	display: flex;
+	flex-direction: column;
+	width: 45%;
 }
 
 .user-type {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .container-user {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin-right: 1em;
-    padding: 0;
-    margin-right: 1.5em;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin-right: 1em;
+	padding: 0;
+	margin-right: 1.5em;
 }
 
-
 .container-user label {
-    position: relative;
-    bottom: 15px;
-    margin-left: 1em;
-    border-radius: 26.04169rem;
+	position: relative;
+	bottom: 15px;
+	margin-left: 1em;
+	border-radius: 26.04169rem;
 }
 
 .container-user input {
-    border-radius: 26.04169rem;
-    border: 1.25px solid var(--neutral-light-darkest, #C5C6CC);
+	border-radius: 26.04169rem;
+	border: 1.25px solid var(--neutral-light-darkest, #c5c6cc);
 }
 
 button {
-    width: 100%;
-    height: 3.5em;
-    border-style: none;
-    border-radius: 0.625rem;
-    background: #FFC300;
-    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
-    margin-top: 2em;
+	width: 100%;
+	height: 3.5em;
+	border-style: none;
+	border-radius: 0.625rem;
+	background: #ffc300;
+	box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.3);
+	margin-top: 2em;
 }
