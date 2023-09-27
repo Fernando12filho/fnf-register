@@ -1,0 +1,107 @@
+.form-container {
+	display: flex;
+	background-color: #fff;
+	flex-direction: column;
+	padding: 2em;
+	border-radius: 1.25rem;
+	background: #fff;
+	box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+	width: 80%;
+	height: 46.3125rem;
+	flex-shrink: 0;
+	box-sizing: border-box;
+}
+
+.form-container input {
+	border-radius: 0.625rem;
+	border: 1px solid #ffc300;
+	background: #fff;
+	height: 3.6em;
+	margin-top: 0.5em;
+	padding: 0 1em;
+}
+
+.form-container input:focus{
+	border-color: black;
+	outline: none;
+}
+
+.form-container label {
+	margin-top: 2.19em;
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.firstName {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.lastName {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.user-type {
+	display: flex;
+	flex-direction: row;
+}
+
+.container-user {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin-right: 1em;
+	padding: 0;
+	margin-right: 1.5em;
+}
+
+.container-user label {
+	position: relative;
+	bottom: 15px;
+	margin-left: 1em;
+	border-radius: 26.04169rem;
+}
+
+.container-user input {
+	border-radius: 26.04169rem;
+	border: 1.25px solid var(--neutral-light-darkest, #c5c6cc);
+}
+
+button {
+	width: 100%;
+	height: 3.5em;
+	border-style: none;
+	border-radius: 0.625rem;
+	background: #ffc300;
+	box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.3);
+	margin-top: 2em;
+}
+
+span{
+	font-size: 10px;
+	padding: 3px;
+	color: red;
+	display: none;
+}
+
+input:invalid[focused="true"] ~ span{
+	display: block;
+}
+
+button:hover{
+	cursor:pointer;
+}
+
+@media(max-width: 800px){
+    .form-container{
+        width: 80%;
+        margin: 100px auto;
+    }
+}
