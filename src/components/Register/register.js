@@ -3,7 +3,6 @@ import Background from "../Background/background";
 import Form from "../Form/form";
 
 function Register() {
-  
   return (
     <div className="body">
       <Background />

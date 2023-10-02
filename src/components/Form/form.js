@@ -1,5 +1,7 @@
+
 import "./form.css";
 import React, { useState } from "react";
+
 
 function Form() {
   // const [formState, setFormState] = useState({
@@ -17,17 +19,18 @@ function Form() {
   const [phone, setPhone] = useState("");
   const [userType, setIsChecked] = useState("");
 
-
-  const errorMessageName = "Nome entre 3-16 caracteres, nao pode conter numeros ou caracteres especiais";
-  const errorMessageLName = "Nome entre 3-16 caracteres, nao pode conter numeros ou caracteres especiais";
+  const errorMessageName =
+    "Nome entre 3-16 caracteres, nao pode conter numeros ou caracteres especiais";
+  const errorMessageLName =
+    "Nome entre 3-16 caracteres, nao pode conter numeros ou caracteres especiais";
   const errorMesageEmail = "Precisa ser um email valido";
 
   function submitForm() {
     if (!email.length) {
       alert("Email Obrigatorio");
     }
-    if (!name.length ) {
-      alert("nome obrigatorio")
+    if (!name.length) {
+      alert("nome obrigatorio");
       return;
     }
     if (!lName.length) {
@@ -78,7 +81,6 @@ function Form() {
     setIsChecked(userType);
   }
 
-
   return (
     <div className="form-container">
       <h3>Seja bem-vindo</h3>
@@ -93,7 +95,6 @@ function Form() {
         placeholder="qwer@fnf.com"
         value={email}
         onChange={onChangeEmail}
-
       />
       <span>{errorMesageEmail}</span>
 
@@ -107,15 +108,13 @@ function Form() {
             id="fname"
             name="fname"
             required
-            errorMessage = "Precisa ter entre 3-16 caracteres, sem numuros ou caracteres especiais"
+            errorMessage="Precisa ter entre 3-16 caracteres, sem numuros ou caracteres especiais"
             pattern="^[A-Za-z]{3,16}$"
             value={name}
             onChange={onChangeName}
-            placeholder="Fallen"
-
+            placeholder="Nome"
           />
           <span>{errorMessageName}</span>
-
         </div>
 
         <div className="lastName">
@@ -128,7 +127,7 @@ function Form() {
             pattern="^[A-Za-z]{3,16}$"
             value={lName}
             onChange={onChangeLName}
-            placeholder="Alvarenga"
+            placeholder="Sobrenome"
           />
           <span>{errorMessageLName}</span>
         </div>
@@ -136,7 +135,7 @@ function Form() {
 
       <label for="pnumber">Telefone</label>
       <input
-        type = "tel"
+        type="tel"
         id="pnumber"
         name="pnumber"
         required
@@ -171,7 +170,9 @@ function Form() {
         </div>
       </div>
 
-      <button onClick={submitForm}>Cadastrar</button>
+        <button onClick={submitForm}>
+          Cadastrar
+        </button>
     </div>
   );
 }

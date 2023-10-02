@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Register from "./components/Register/register";
+//import AfterSubmition from "./pages/AfterSubmition/afterSubmition";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

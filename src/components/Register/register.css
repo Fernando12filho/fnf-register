@@ -16,6 +16,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+
 }
 
 .container-1 h1,
@@ -57,6 +58,7 @@ p {
 
 .logo {
 	display: flex;
+	align-items: flex-start;
 }
 
 .logo p {
